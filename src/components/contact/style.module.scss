@@ -32,15 +32,27 @@
     gap: 50px;
     justify-content: center;
     margin-top: 30px;
+    @media (max-width: 1100px) {
+      justify-content: space-between;
+    }
     .left {
       p {
         font-size: 40px;
         font-weight: 400;
         margin-bottom: 20px;
+        @media (max-width: 1100px) {
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
       }
       span {
         font-size: 20px;
         font-weight: 300;
+        @media (max-width: 1100px) {
+          font-size: 10px;
+          font-weight: 250;
+        }
       }
     }
     .right {
@@ -52,6 +64,10 @@
         padding: 10px 25px;
         border-radius: 5px;
         cursor: pointer;
+        @media (max-width: 1100px) {
+          font-size: 10px;
+          font-weight: 300;
+        }
       }
     }
   }
