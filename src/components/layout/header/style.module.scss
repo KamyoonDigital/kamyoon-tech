@@ -23,7 +23,9 @@
     @media (min-width: 1550px) {
       max-width: 65%;
     }
-
+    @media (max-width: 800px) {
+      width: 85%;
+    }
     .navigation {
       display: flex;
       @media (max-width: 1100px) {
