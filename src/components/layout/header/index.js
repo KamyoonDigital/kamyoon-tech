@@ -10,18 +10,25 @@ const Header = () => {
   const [headerBackground, setHeaderBackground] = useState(false);
 
   const handleScroll = () => {
-    if (window.innerHeight <= 100) {
+    if (window.innerHeight <= 200) {
       return;
     }
 
-    if (window.scrollY > lastScrollY && window.innerHeight >= 50) {
+    // Added check to handle Safari top scroll stretch issue
+    if (window.scrollY <= 0) {
+      setShowHeader(true);
+      setHeaderBackground(false);
+      return;
+    }
+
+    if (window.scrollY > lastScrollY && window.scrollY >= 200) {
       setShowHeader(false);
     } else {
       setShowHeader(true);
     }
     setLastScrollY(window.scrollY);
 
-    if (window.scrollY > 50) {
+    if (window.scrollY > 200) {
       setHeaderBackground(true);
     } else {
       setHeaderBackground(false);
