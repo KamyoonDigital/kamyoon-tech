@@ -1,0 +1,20 @@
+.whatWeDid {
+  width: 100%;
+  margin-block: 50px;
+  .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      img {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

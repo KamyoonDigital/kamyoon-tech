@@ -1,0 +1,28 @@
+.avatarCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 800px;
+  margin: 0 auto;
+  .avatarGrp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    .avatar {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      .name {
+        text-align: center;
+        p {
+          font-size: 12px;
+          font-weight: 600;
+        }
+        span {
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

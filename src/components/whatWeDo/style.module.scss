@@ -1,0 +1,19 @@
+.whatWeDo {
+  margin-block: 50px;
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    .skillItem {
+      display: flex;
+      .desc {
+        p {
+          margin-top: 3px;
+        }
+      }
+      .icon {
+        margin-right: 10px;
+      }
+    }
+  }
+}
