@@ -22,10 +22,17 @@
     h1 {
       font-size: 64px;
       font-weight: 400;
+      @media (max-width: 1100px) {
+        font-size: 32px;
+        font-weight: 400;
+      }
     }
     span {
       font-size: 30px;
       font-weight: 250;
+      @media (max-width: 1100px) {
+        font-size: 15px;
+      }
     }
   }
 }
