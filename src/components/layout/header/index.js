@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import style from "./style.module.scss";
 import Image from "next/image";
 import logo from "@/images/kamyoon-tech-logo.svg";
+import cn from "classnames";
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
@@ -28,7 +29,7 @@ const Header = () => {
     }
     setLastScrollY(window.scrollY);
 
-    if (window.scrollY > 200) {
+    if (window.scrollY > 50) {
       setHeaderBackground(true);
     } else {
       setHeaderBackground(false);
@@ -49,7 +50,7 @@ const Header = () => {
         showHeader ? style.show : style.hide
       } ${headerBackground ? style.whiteBackground : ""}`}
     >
-      <div className={style.navigationContainer}>
+      <div className={cn(style.navigationContainer)}>
         <div className={style.logoSide}>
           <Image width={150} height={40} src={logo} alt="Kamyoon Tech Logo" />
         </div>

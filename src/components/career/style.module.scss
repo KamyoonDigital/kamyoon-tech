@@ -6,15 +6,20 @@
     justify-content: center;
     width: 100%;
     margin-top: 30px;
-    button {
+    a {
       outline: none;
       border: none;
+      display: inline-block;
       background-color: black;
       color: white;
       padding: 10px 25px;
       border-radius: 5px;
       cursor: pointer;
       width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
     }
   }
 }

@@ -1,11 +1,10 @@
 .headerContainer {
-  padding-block: 20px;
+  padding-block: 30px;
   position: fixed;
   top: 0;
   z-index: 9;
   width: 100%;
   transition: transform 0.3s ease-in-out;
-
   .navigationContainer {
     display: flex;
     align-items: center;
@@ -42,4 +41,6 @@
 }
 .whiteBackground {
   background-color: white;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }

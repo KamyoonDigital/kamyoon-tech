@@ -16,7 +16,7 @@ const Career = () => {
         </p>
 
         <div className={style.buttons}>
-          <button>ik@kamyoon.tech</button>
+          <a href="mailto:info@kamyoon.tech">ik@kamyoon.tech</a>
         </div>
       </div>
     </div>
