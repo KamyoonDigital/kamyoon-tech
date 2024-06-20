@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./style.module.scss";
+import ContactMap from "../contactMap";
 
 const Contact = () => {
   return (
@@ -20,6 +21,8 @@ const Contact = () => {
             <a href="mailto:info@kamyoon.tech">M: info@kamyoon.tech</a>
           </div>
         </div>
+
+        <ContactMap />
 
         <div className={style.form}>
           <div className={style.left}>
